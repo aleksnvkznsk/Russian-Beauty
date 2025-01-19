@@ -1,7 +1,7 @@
-export default function About() {
-    return (
-      <>
-        About
-      </>
-    );
-  }
+import FAQ from "@/components/faq/faq";
+
+const AboutPage = () => {
+  return <FAQ />
+
+}
+export default AboutPage
