@@ -1,0 +1,137 @@
+.testimonials-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+  background: rgba(238, 7, 7, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+  transition: background 0.3s ease;
+  font-size: 1.5rem;
+  line-height: 0.8;
+  margin: 0 10px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.testimonial-item {
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.testimonial-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.testimonial-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
+}
+
+.testimonial-name-and-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.testimonial-company {
+  margin: 0;
+  font-size: 0.9rem;
+  color: gray;
+  text-align: center;
+  word-break: break-word;
+}
+
+.testimonial-right {
+  flex: 1;
+}
+
+.testimonial-text {
+  margin-bottom: 15px;
+  word-break: break-word;
+}
+
+.testimonial-link-below {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  align-self: center;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
