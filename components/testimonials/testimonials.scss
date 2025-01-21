@@ -7,6 +7,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .testimonials-title {
@@ -24,6 +25,19 @@
   transition: transform 0.5s ease-in-out;
 }
 
+.testimonial-item {
+  flex: 0 0 auto;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
 .slider-buttons {
   display: flex;
   justify-content: center;
@@ -32,7 +46,7 @@
 
 .prev-button,
 .next-button {
-  background: rgba(238, 7, 7, 0.5);
+  background: rgba(60, 60, 60, 0.5);
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -49,21 +63,6 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.8);
-  }
-}
-
-.testimonial-item {
-  display: flex;
-  flex: 1;
-  flex-shrink: 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
   }
 }
 

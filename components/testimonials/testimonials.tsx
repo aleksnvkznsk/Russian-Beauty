@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useRef, useEffect } from 'react';
 import './testimonials.scss';
 
@@ -10,7 +10,7 @@ interface Testimonial {
     company?: string;
 }
 
-const Testimonials: React.FC = () => {
+const Testimonials = () => {
     const testimonials: Testimonial[] = [
         {
             id: 1,
@@ -36,20 +36,28 @@ const Testimonials: React.FC = () => {
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     const sliderTrackRef = useRef<HTMLDivElement>(null);
-    const [trackWidth, setTrackWidth] = useState(0);
+    const [itemWidth, setItemWidth] = useState(0);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (sliderTrackRef.current && sliderTrackRef.current.children.length > 0) {
+                setItemWidth(sliderTrackRef.current.children[0].clientWidth);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
 
     useEffect(() => {
         if (sliderTrackRef.current) {
-            setTrackWidth(sliderTrackRef.current.offsetWidth);
+            sliderTrackRef.current.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
         }
-    }, [testimonials]);
-
-    useEffect(() => {
-        if (sliderTrackRef.current) {
-            sliderTrackRef.current.style.transform = `translateX(-${currentIndex * trackWidth}px)`;
-            console.log(sliderTrackRef.current.style.transform);
-        }
-    }, [currentIndex, trackWidth]);
+    }, [currentIndex, itemWidth]);
 
     const prevSlide = () => {
         setCurrentIndex((prevIndex) =>
@@ -67,7 +75,7 @@ const Testimonials: React.FC = () => {
         <div className="testimonials-container">
             <h2 className="testimonials-title">Отзывы наших клиентов</h2>
             <div className="slider-wrapper">
-                <div className="slider-track" style={{ width: `${testimonials.length * 100}%`, }} ref={sliderTrackRef} >
+                <div className="slider-track" ref={sliderTrackRef} >
                     {testimonials.map((testimonial) => (
                         <div key={testimonial.id} className="testimonial-item">
                             <div className="testimonial-left">
@@ -88,7 +96,7 @@ const Testimonials: React.FC = () => {
                 <button onClick={prevSlide} className="prev-button">{'<'}</button>
                 <button onClick={nextSlide} className="next-button">{'>'}</button>
             </div>
-            <a href="" className="testimonial-link-below">Смотреть все отзывы</a>
+            <a href="https://2gis.ru/novosibirsk/firm/70000001028005800/tab/reviews" target="_blank" className="testimonial-link-below">Смотреть все отзывы</a>
         </div>
     );
 };
