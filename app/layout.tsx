@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Header from "@/components/header/header";
+import HeaderClient from "@/components/header/header-client";
 
 export const metadata: Metadata = {
   title: "Russian Beauty",
@@ -14,10 +14,8 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <Header />
-        <main>
+        <HeaderClient />
           {children}
-        </main>
       </body>
     </html>
   );
