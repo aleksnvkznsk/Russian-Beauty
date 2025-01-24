@@ -1,0 +1,19 @@
+.slider-container {
+  text-align: center;
+  margin: 10px;
+  
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container{
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  border-radius: 50%;
+}

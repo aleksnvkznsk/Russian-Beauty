@@ -1,0 +1,18 @@
+.slider-page {
+    padding: 20px;
+    cursor: default;
+}
+
+.slider-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+
+}
+
+.slider-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+}
