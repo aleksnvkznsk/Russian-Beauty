@@ -1,7 +1,7 @@
 .slider-container {
   text-align: center;
   margin: 10px;
-  
+  grid-column: span 2;
 }
 
 .image-wrapper {
@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.image-container{
+.image-container {
   position: absolute;
   inset: 0;
 }
