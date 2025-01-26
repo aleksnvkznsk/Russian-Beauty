@@ -8,7 +8,8 @@
     &__logo {
         font-size: 1.5rem;
         font-weight: bold;
-        color: #333;
+        color: #696156;
+        ;
     }
 
     &__nav-container {
@@ -89,7 +90,7 @@
             transition: color 0.3s ease;
 
             &:hover {
-                color: #007bff;
+                color: rgb(196, 190, 183);
             }
 
             @media (max-width: 768px) {

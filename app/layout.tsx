@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeaderClient from "@/components/header/header-client";
+import "./global.scss"
 
 export const metadata: Metadata = {
   title: "Russian Beauty",

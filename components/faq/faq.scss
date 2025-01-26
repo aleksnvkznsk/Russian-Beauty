@@ -5,7 +5,7 @@
 
     .faq-title {
         font-size: 2.2rem;
-        color: #333;
+        color: #696156;
         margin-bottom: 2rem;
     }
 
@@ -26,16 +26,13 @@
     .faq-question {
         font-size: 1.1rem;
         font-weight: bold;
-        color: #444;
+        color:  #696156;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem 0;
-
-        &:hover {
-            color: #007bff;
-        }
+        text-align: left;
     }
 
     .faq-icon {
@@ -56,6 +53,6 @@
         height: 0;
         overflow: hidden;
         transition: height 0.3s ease-out, padding 0.3s ease-out;
-        text-align: justify;
+        text-align: left;
     }
 }

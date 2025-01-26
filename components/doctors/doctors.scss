@@ -1,11 +1,10 @@
 .doctors-component {
     padding: 2rem;
     text-align: center;
-    background-color: #f9f9f9;
 
     .doctors-title {
         font-size: 2.2rem;
-        color: #333;
+        color: #696156;
         margin-bottom: 2rem;
     }
 
@@ -23,9 +22,8 @@
     .doctor-item {
         display: flex;
         align-items: center;
-        background-color: white;
+        background-color: #F7F6F4;
         border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 1rem;
         width: 100%;
         max-width: 350px;
@@ -78,6 +76,7 @@
     }
 
     .doctor-modal {
+        z-index: 100;
         position: fixed;
         top: 0;
         left: 0;

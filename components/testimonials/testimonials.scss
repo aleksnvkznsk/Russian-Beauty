@@ -8,11 +8,13 @@
   display: flex;
   flex-direction: column;
   z-index: 1;
+  color:  #696156;
 }
 
 .testimonials-title {
   text-align: center;
   margin-bottom: 20px;
+  color:  #696156;
 }
 
 .slider-wrapper {
@@ -46,23 +48,23 @@
 
 .prev-button,
 .next-button {
-  background: rgba(60, 60, 60, 0.5);
+  background-color: #696156;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: black;
+  color: white;
   transition: background 0.3s ease;
   font-size: 1.5rem;
   line-height: 0.8;
   margin: 0 10px;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.8);
+    background-color: rgb(196, 190, 183);
   }
 }
 
@@ -120,17 +122,18 @@
 }
 
 .testimonial-link-below {
+  font-size: 18px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 15px 25px;
+  background-color: #696156;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
   transition: background-color 0.3s ease;
   margin-top: 20px;
   align-self: center;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: rgb(196, 190, 183);
   }
 }
