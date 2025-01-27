@@ -16,8 +16,8 @@ const slides = [
     {
         id: 3,
         imageUrl: './image3.jpg',
-        title: 'Слайд 3',
-        leftWords: ['Текст', 'Текст'],
+        title: 'Ботулинотерапия',
+        leftWords: ['ПОДТЯНУТАЯ КОЖА', 'УПРУГОСТЬ'],
     },
 
 ];
