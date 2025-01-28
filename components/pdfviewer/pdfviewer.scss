@@ -2,8 +2,17 @@
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-  
-  .pdf-viewer-embed {
-      display: block;
-  }
+    flex-direction: column;
+}
+
+.pdf-viewer-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #696156;
+    margin-bottom: 2rem;
+}
+
+.pdf-viewer-embed {
+    display: block;
+    border-radius: 10px;
+}

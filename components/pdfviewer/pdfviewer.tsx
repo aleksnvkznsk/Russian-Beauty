@@ -1,3 +1,4 @@
+import "./pdfviewer.scss"
 interface PdfViewerProps {
     pdfUrl: string;
     width?: string;
@@ -7,6 +8,7 @@ interface PdfViewerProps {
 const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, width = '100%', height = '600px' }) => {
     return (
         <div className="pdf-viewer-container">
+            <h1 className="pdf-viewer-title">Стоимость услуг</h1>
             <embed
                 src={pdfUrl}
                 type="application/pdf"
@@ -15,7 +17,6 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, width = '100%', height = 
                 className="pdf-viewer-embed"
             />
         </div>
-
     );
 };
 
