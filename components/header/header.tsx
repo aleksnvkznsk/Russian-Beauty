@@ -16,9 +16,8 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         {
             href: "", label: "Услуги",
             submenu: [
-                { href: "/service1", label: "Инъекционная косметология" },
-                { href: "/service2", label: "Аппаратная косметология" },
-                { href: "/service3", label: "Эстетическая косметология" },
+                { href: "/cosmetology", label: "Косметология" },
+                { href: "/dentistry", label: "Стоматология" },
             ]
         },
         { href: "/price", label: "Прайс" },
