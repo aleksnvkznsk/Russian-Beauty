@@ -6,8 +6,8 @@ const FootherClient = () => {
             title: '',
             links: [
                 { text: 'ООО « Russian Beauty»© Косметологическая клиника Russian Beauty. Все права защищены.', href: '#' },
-                { text: 'Мед. лицензия: ', href: '#' },
-                { text: 'Политика Конфиденциальности', href: '#' },
+                { text: 'Мед. лицензия: ', href: '/license' },
+                { text: 'Политика Конфиденциальности', href: '/privacypolicy' },
                 { text: 'Публичная информация', href: '#' },
             ],
         },
